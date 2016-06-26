@@ -109,7 +109,7 @@ BOOLEAN supIsProcess32bit(
 	pebi.Size = sizeof(PROCESS_EXTENDED_BASIC_INFORMATION);
 	status = NtQueryInformationProcess(hProcess, ProcessBasicInformation, &pebi, sizeof(pebi), NULL);
 	if (NT_SUCCESS(status)) {
-		return (pebi.IsWow64Process == 1);
+		return (pebi.DUMMYSTRUCTNAME.IsWow64Process == 1);
 	}
 	return FALSE;
 }

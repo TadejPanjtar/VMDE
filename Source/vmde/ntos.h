@@ -1943,7 +1943,7 @@ typedef struct _DISPATCHER_HEADER {
 					UCHAR Inserted : 1;
 					volatile UCHAR Expired : 1;
 				} DUMMYSTRUCTNAME;
-			} DUMMYUNIONNAME;
+			} DUMMYUNIONNAME2;
 		} DUMMYSTRUCTNAME2;
 
 		struct {                            // Timer2
